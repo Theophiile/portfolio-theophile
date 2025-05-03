@@ -1,24 +1,28 @@
-import './About.scss';
+import React from 'react'
+import './About.scss'
 
-export default function About() {
+const About = () => {
   return (
-    <section className="about">
-      <div className="about-container">
-        <div className="about-image">
-          <img src="../../assets/profile.jpg" alt="Théo" />
-        </div>
-        <div className="about-content">
+    <section id="apropos" className="about">
+      <div className="about-content">
+        <div className="about-text">
           <h2>À propos de moi</h2>
           <p>
-            Passionné par le développement web depuis 5 ans, j'ai suivi une formation intensive 
-            chez OpenClassrooms pour perfectionner mes compétences. J'aime créer des interfaces 
-            intuitives et résoudre des problèmes complexes.
+            Je suis Théophile Pinto, un développeur passionné par la création de sites web modernes et performants.
+            Mon parcours m'a permis d'acquérir des compétences solides en développement front-end et back-end.
           </p>
           <p>
-            En dehors du code, je suis amateur de photographie et de randonnée en montagne.
+            J'aime relever des défis techniques et créer des solutions innovantes qui améliorent l'expérience utilisateur.
+            Mon objectif est de développer des sites web qui allient esthétique et fonctionnalité.
           </p>
+        </div>
+        <div className="about-image">
+          {/* Vous pourrez ajouter votre photo ici */}
+          <div className="image-placeholder"></div>
         </div>
       </div>
     </section>
-  );
+  )
 }
+
+export default About 
