@@ -1,19 +1,21 @@
-import { NavLink } from 'react-router-dom';
-import './Navbar.scss';
+import React from 'react'
+import './Header.scss'
 
-export default function Navbar() {
+const Header = () => {
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <h1 className="logo">Théophile</h1>
+    <header className="header">
+      <nav className="nav">
+        <div className="logo">TP</div>
         <ul className="nav-links">
-          <li><NavLink to="/" end>Accueil</NavLink></li>
-          <li><NavLink to="/competences">Compétences</NavLink></li>
-          <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-          <li><NavLink to="/a-propos">À propos</NavLink></li>
-          <li><NavLink to="/contact">Contact</NavLink></li>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-  );
+      </nav>
+    </header>
+  )
 }
+
+export default Header 
