@@ -30,11 +30,11 @@ const Contact = () => {
         <h3 className="contact-card-title">Mes coordonnées</h3>
         <div className="contact-card-item">
           <span className="contact-label">Email</span>
-          <span className="contact-value"><a href="mailto:contact@theophilepinto.com">contact@theophilepinto.com</a></span>
+          <span className="contact-value"><a href="mailto:contact@theophilepinto.com">theo-pinto@hotmail.fr</a></span>
         </div>
         <div className="contact-card-item">
           <span className="contact-label">Téléphone</span>
-          <span className="contact-value"><a href="tel:+336XXXXXXXX">+33 6 XX XX XX XX</a></span>
+          <span className="contact-value"><a href="tel:+336XXXXXXXX">+33 6 76 15 73 20</a></span>
         </div>
         <div className="contact-card-item">
           <span className="contact-label">Réseaux</span>

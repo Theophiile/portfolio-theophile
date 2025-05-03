@@ -20,7 +20,6 @@ const Footer = () => {
         <div className="footer-info">
           <p>Théophile Pinto</p>
           <p>Développeur Full Stack</p>
-          <p>contact@theophilepinto.com</p>
         </div>
         <div className="footer-copyright">
           <p>&copy; {currentYear} Théophile Pinto. Tous droits réservés.</p>
