@@ -18,58 +18,36 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Ici, on pourra ajouter la logique pour envoyer le formulaire
+    // Ici, vous pourrez ajouter la logique pour envoyer le formulaire
     console.log('Formulaire soumis:', formData)
   }
 
   return (
     <section id="contact" className="contact">
-      <h2>Contactez-moi</h2>
-      <div className="contact-content">
-        <form onSubmit={handleSubmit} className="contact-form">
-          <div className="form-group">
-            <label htmlFor="name">Nom</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <button type="submit" className="submit-btn">Envoyer</button>
-        </form>
-        <div className="contact-info">
-          <h3>Informations de contact</h3>
-          <p>Email: theo-pinto@hotmail.fr</p>
-          <p>Téléphone: +33 6 76 15 73 20</p>
-          <div className="social-links">
-            <a href="#" className="social-link">LinkedIn</a>
-            <a href="#" className="social-link">GitHub</a>
-            <a href="#" className="social-link">Twitter</a>
-          </div>
+      <h2 className="contact-title">Contactez-moi</h2>
+      <p className="contact-subtitle">Une question, une collaboration ou envie d'échanger sur un projet&nbsp;? N'hésitez pas à me contacter&nbsp;!</p>
+      <div className="contact-card">
+        <h3 className="contact-card-title">Mes coordonnées</h3>
+        <div className="contact-card-item">
+          <span className="contact-label">Email</span>
+          <span className="contact-value"><a href="mailto:contact@theophilepinto.com">contact@theophilepinto.com</a></span>
+        </div>
+        <div className="contact-card-item">
+          <span className="contact-label">Téléphone</span>
+          <span className="contact-value"><a href="tel:+336XXXXXXXX">+33 6 XX XX XX XX</a></span>
+        </div>
+        <div className="contact-card-item">
+          <span className="contact-label">Réseaux</span>
+          <span className="contact-value">
+            <a href="https://www.linkedin.com/in/théophile-pinto-06bbb21b2/" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-linkedin-in"></i> LinkedIn
+            </a>
+          </span>
+          <span className="contact-value">
+            <a href="https://github.com/Theophiile" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-github"></i> GitHub
+            </a>
+          </span>
         </div>
       </div>
     </section>
