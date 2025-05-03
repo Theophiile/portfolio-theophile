@@ -8,17 +8,13 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-social">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+          <a href="https://github.com/Theophiile" target="_blank" rel="noopener noreferrer" className="social-link">
             <i className="fa-brands fa-github"></i>
             GitHub
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+          <a href="https://www.linkedin.com/in/théophile-pinto-06bbb21b2/" target="_blank" rel="noopener noreferrer" className="social-link">
             <i className="fa-brands fa-linkedin-in"></i>
             LinkedIn
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">
-            <i className="fa-brands fa-x-twitter"></i>
-            Twitter
           </a>
         </div>
         <div className="footer-info">

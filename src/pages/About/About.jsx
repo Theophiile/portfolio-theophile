@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.scss'
+import TheoImg from '../../assets/images/Theo.webp'
 
 const About = () => {
   return (
@@ -17,8 +18,7 @@ const About = () => {
           </p>
         </div>
         <div className="about-image">
-          {/* Vous pourrez ajouter votre photo ici */}
-          <div className="image-placeholder"></div>
+          <img src={TheoImg} alt="Photo de Théophile Pinto" width="300" height="300" loading="lazy" />
         </div>
       </div>
     </section>
