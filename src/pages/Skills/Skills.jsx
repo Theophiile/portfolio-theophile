@@ -1,31 +1,41 @@
-import './Competences.scss';
+import React from 'react'
+import './Skills.scss'
 
-const skills = [
-  { name: 'HTML/CSS', level: 90 },
-  { name: 'JavaScript', level: 85 },
-  { name: 'React', level: 80 },
-  { name: 'Node.js', level: 75 },
-  { name: 'Git', level: 80 },
-];
+const Skills = () => {
+  const skills = [
+    {
+      category: "Front-end",
+      items: ["React", "Vue.js", "JavaScript", "HTML5", "CSS3", "SASS"]
+    },
+    {
+      category: "Back-end",
+      items: ["Node.js", "Express", "MongoDB", "PostgreSQL"]
+    },
+    {
+      category: "Outils",
+      items: ["Git", "VS Code", "Figma", "Lighthouse"]
+    }
+  ]
 
-export default function Competences() {
   return (
-    <section className="competences">
+    <section id="competences" className="skills">
       <h2>Mes Compétences</h2>
-      <div className="skills-container">
-        {skills.map((skill, index) => (
-          <div key={index} className="skill-item">
-            <h3>{skill.name}</h3>
-            <div className="skill-bar">
-              <div 
-                className="skill-progress" 
-                style={{ width: `${skill.level}%` }}
-              ></div>
-              <span>{skill.level}%</span>
+      <div className="skills-grid">
+        {skills.map((skillCategory, index) => (
+          <div key={index} className="skill-category">
+            <h3>{skillCategory.category}</h3>
+            <div className="skill-items">
+              {skillCategory.items.map((skill, skillIndex) => (
+                <div key={skillIndex} className="skill-item">
+                  {skill}
+                </div>
+              ))}
             </div>
           </div>
         ))}
       </div>
     </section>
-  );
+  )
 }
+
+export default Skills 
