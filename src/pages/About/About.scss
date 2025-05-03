@@ -1,0 +1,37 @@
+.about {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  
+    &-container {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+  
+    &-image {
+      flex: 1;
+      
+      img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      }
+    }
+  
+    &-content {
+      flex: 2;
+  
+      h2 {
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+      }
+  
+      p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+      }
+    }
+  }

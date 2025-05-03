@@ -1,0 +1,47 @@
+.home {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../assets/hero-bg.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+  
+    .hero {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+  
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #3498db;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+      }
+    }
+  
+    .cta-button {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+  
+      &:hover {
+        background: #2980b9;
+        transform: translateY(-3px);
+      }
+    }
+  }
