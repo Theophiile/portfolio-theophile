@@ -6,7 +6,7 @@ const Home = () => {
     <section id="accueil" className="home">
       <div className="home-content">
         <h1>Théophile Pinto</h1>
-        <p className="subtitle">Développeur Full Stack</p>
+        <h2 className="subtitle">Développeur Full Stack</h2>
         <p className="description">
           Passionné par la création d'applications web modernes et innovantes
         </p>

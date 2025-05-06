@@ -38,7 +38,7 @@ const Projects = () => {
       <div className="projects-grid">
         {projects.map(project => (
           <div key={project.id} className="project-card">
-            <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-image" style={{ backgroundImage: `url(${project.image})` }}></a>
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-image" style={{ backgroundImage: `url(${project.image})` }} aria-label={`Voir le projet ${project.title}`}></a>
             <div className="project-info">
               <h3>{project.title}</h3>
               <p>{project.description}</p>

@@ -30,11 +30,11 @@ const Contact = () => {
         <h3 className="contact-card-title">Mes coordonnées</h3>
         <div className="contact-card-item">
           <span className="contact-label">Email</span>
-          <span className="contact-value"><a href="mailto:contact@theophilepinto.com">theo-pinto@hotmail.fr</a></span>
+          <span className="contact-value"><a href="mailto:theo-pinto@hotmail.fr">theo-pinto@hotmail.fr</a></span>
         </div>
         <div className="contact-card-item">
           <span className="contact-label">Téléphone</span>
-          <span className="contact-value"><a href="tel:+336XXXXXXXX">+33 6 76 15 73 20</a></span>
+          <span className="contact-value"><a href="tel:+33676157320">+33 6 76 15 73 20</a></span>
         </div>
         <div className="contact-card-item">
           <span className="contact-label">Réseaux</span>
@@ -42,9 +42,7 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/théophile-pinto-06bbb21b2/" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-linkedin-in"></i> LinkedIn
             </a>
-          </span>
-          <span className="contact-value">
-            <a href="https://github.com/Theophiile" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Theophiile" target="_blank" rel="noopener noreferrer" style={{ marginLeft: '1rem' }}>
               <i className="fa-brands fa-github"></i> GitHub
             </a>
           </span>
