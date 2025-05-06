@@ -46,8 +46,16 @@
 }
 
 @media (max-width: 768px) {
+  .about {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
   .about-content {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  .about-image img {
+    max-width: 100%;
+    height: auto;
   }
 } 
