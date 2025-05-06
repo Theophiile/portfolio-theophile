@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Header.scss'
+import Logo from '../../assets/images/logo.webp'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -11,7 +12,9 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav">
-        <div className="logo">TP</div>
+        <a href="#accueil" className="logo">
+          <img src={Logo} alt="Logo TP" width="60" height="60" />
+        </a>
         <button className="menu-toggle" onClick={toggleMenu} aria-label="Menu">
           <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}></span>
         </button>
