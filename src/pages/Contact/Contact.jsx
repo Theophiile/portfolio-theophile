@@ -42,7 +42,7 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/théophile-pinto-06bbb21b2/" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-linkedin-in"></i> LinkedIn
             </a>
-            <a href="https://github.com/Theophiile" target="_blank" rel="noopener noreferrer" style={{ marginLeft: '1rem' }}>
+            <a href="https://github.com/Theophiile" target="_blank" rel="noopener noreferrer" className="github-link">
               <i className="fa-brands fa-github"></i> GitHub
             </a>
           </span>
