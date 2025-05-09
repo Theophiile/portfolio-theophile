@@ -1,27 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Contact.scss'
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  })
-
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }))
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Ici, vous pourrez ajouter la logique pour envoyer le formulaire
-    console.log('Formulaire soumis:', formData)
-  }
-
   return (
     <section id="contact" className="contact">
       <h2 className="contact-title">Contactez-moi</h2>
